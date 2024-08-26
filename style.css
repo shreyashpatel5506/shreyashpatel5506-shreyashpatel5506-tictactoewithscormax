@@ -1,0 +1,160 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    background-color: #548687;
+    text-align: center;
+  }
+  main
+  .container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.3);
+    font-size: 8vmin;
+    color: #b0413e;
+    background-color: #ffffc7;
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .msg-container1 {
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  .hide {
+    display: none;
+  }
+  .scoredisplay{
+    display: none;
+  }
+  .score{
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 4rem;
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  .names{
+    display: flex;
+    flex-direction:column;
+    align-items: baseline;
+    justify-content: space-evenly;
+    gap: 15px;
+  }
+  .names div{
+    display: flex;
+    gap: 20px;
+    padding: 7px 12px;
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  input{
+    padding: 7px 12px;
+    border-radius: 35px;
+    border: none;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
+  input:hover{
+    border: none;
+  }
+  input[type="submit"]{
+    font-size: 24px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    border: 2px solid;
+    cursor: pointer;
+  }
+.container1{
+  display: none;
+}
+#msg{
+  font-size: 18px;
+  width: 100%;
+  color: #ffffc7;
+}
+#finalwinner{
+  font-size: 36px;
+  width: 100%;
+  color: #ffffc7;
+  margin-top: 250px;
+}
+  @media only  screen and (max-width:767px) {
+    .names{
+      width: 100%;
+      align-items: center;
+    }
+    .person,.maxscore{
+      flex-direction: column;
+    }
+    .score{
+      flex-direction: column;
+      gap: 0;
+      font-size: x-large;
+    }
+    .msg-container{
+      height: fit-content;
+    }
+    main .container{
+      height: max-content;
+      margin-bottom: 15px;
+      margin-top: 15px;
+    }
+  }

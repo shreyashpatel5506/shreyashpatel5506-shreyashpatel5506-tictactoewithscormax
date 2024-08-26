@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic-Tac-Toe Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="maincontainer">
+    <div class="names">
+        <div class="person">Enter your name(O)<input type="text" class="name" id="name1i"></div>
+        <div class="person">Enter your name(X)<input type="text" class="name" id="name2i"></div>
+        <div class="maxscore">Entet max score(win)<input type="number" name="maxscore" id="maximum"></div>
+        <input type="submit" value="submit" id="submit" onclick="submit()">
+    </div>
+    <div class="msg-container hide">
+      <p id="msg">Winner
+      </p>
+    </div>
+    <div class="scoredisplay">
+    <p class="Score"><p id="name1"></p><p id="wino">0</p></p>
+    <p class="Score"><p id=name2></p><p id="winx">0</p></p>
+    </div>
+    <main>
+      <h1>Tic Tac Toe</h1>
+      <div class="container">
+        <div class="game">
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+          <button class="box"></button>
+        </div>
+      </div>
+      <button id="reset-btn">Reset Game</button>
+    </main>
+    </div>
+    <div class="container1">
+      <div class="msg-container1">
+        <p id="finalwinner">Winner
+        </p>
+        <button id="new-btn">New Game</button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
